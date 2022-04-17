@@ -76,6 +76,13 @@ module.exports = {
                 {
                     filename: 'assets/fonts/[hash][ext]'
                 }
+            },
+
+            {
+                test: /\.glsl$/,
+                use: [
+                    'webpack-glsl-loader'
+                ]
             }
         ]
     }
